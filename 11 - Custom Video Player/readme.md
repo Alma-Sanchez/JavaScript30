@@ -30,6 +30,5 @@ __Features TODO__
 
 
 
-Completed solutions for the JavaScript 30 Day Challenge along with my own modifications.
-
-To view the course and grab the starter files visit [https://JavaScript30.com](https://JavaScript30.com)
+<hr />
+To view the course and give it a try yourself: [https://JavaScript30.com](https://JavaScript30.com)
