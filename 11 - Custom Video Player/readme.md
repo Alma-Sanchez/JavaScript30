@@ -1,5 +1,4 @@
-![]()
-
+![screenshot_video.jpg](:storage\4bedcbcd-f268-4671-a85b-3c76e1fd3b39\b8835421.jpg)
 Day 11
 =========
 ### Custom Video Player
@@ -15,6 +14,8 @@ __Overview__
 
 __Extra Features Implemented__
   - Volume icon changes to low volume & mute
+  - Playback rate is shown and updates
+    ![muted_icon_volume_AND_playbackrate_displayed.jpg](:storage\4bedcbcd-f268-4671-a85b-3c76e1fd3b39\2dc229b9.jpg)
   - Customized player to look like youtube
   - Added ball at the end of the progress bar
   - Changed background color
