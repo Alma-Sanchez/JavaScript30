@@ -3,6 +3,7 @@
 Day 1:  JavaScript Drum Kit
 =========
 __Overview__
+  - Review of the HTML audio tag
   - Data attributes - used to store specific data that has no visual representation
   - transitionend - gets fired when a transition is over, used to indicate which key was pressed  
 
