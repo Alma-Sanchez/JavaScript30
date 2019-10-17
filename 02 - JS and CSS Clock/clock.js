@@ -15,11 +15,10 @@ function setDate(){
   const hourDegrees = ((360/12) * hour) + offset;
   
   // Stop the second hand from going all the way around to reach 0 and continue instead
-  if(sec == 0) {
-    console.log(secondHand);
+  if (sec == 0) {
     secondHand.style.transition = "none";
   }
-  if(secDegrees == 1) {
+  if (secDegrees == 1) {
     secondHand.style.transition = "all 0.05s";
   }
 
