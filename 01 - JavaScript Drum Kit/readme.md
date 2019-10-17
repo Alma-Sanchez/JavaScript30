@@ -18,4 +18,4 @@ __Features Wanted__
 <br/>
 
 <hr />
-To view the course and give it a try yourself visit: [https://JavaScript30.com](https://JavaScript30.com)
+To view the course and give it a try yourself visit: https://JavaScript30.com
