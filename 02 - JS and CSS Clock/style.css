@@ -1,76 +1,84 @@
  html {
-      background: #7b7977;
-      /* background-size: cover; */
-      font-family: 'helvetica neue';
-      text-align: center;
-      font-size: 10px;
-    }
+  background: #7b7977;
+  font-family: 'helvetica neue';
+  text-align: center;
+  font-size: 10px;
+}
 
-    body {
-      margin: 0;
-      font-size: 2rem;
-      display: flex;
-      flex: 1;
-      min-height: 100vh;
-      min-width: 250px;
-      align-items: center;
-    }
+body {
+  margin: 0;
+  font-size: 2rem;
+  min-height: 100vh;
+  min-width: 250px;
+}
 
-    .clock {
-      width: 40rem;
-      height: 40rem;
-      background-color: black;
-      /* border: 25px solid white; */
-      border: 30px double #17806d;
-      border-radius: 50%;
-      margin: 50px auto;
-      position: relative;
-      padding: 2rem;
-      box-shadow:
-        0 0 5px 6px rgba(0,0,0,0.12),
-        inset 0 0 0 3px #D8D8D885,
-        inset 0 0 13px #cbcbcbd9,
-        0 0 10px rgba(0,0,0,0.2);
-    }
+h1 {
+  margin-top: 60px;
+  margin-bottom: 70px;
+  font-size: 58pt;
+}
 
-    .clock-face {
-      position: relative;
-      width: 100%;
-      height: 100%;
-      transform: translateY(-3px); /* account for the height of the clock hands */
-      position: relative;
-    }
+.challengeNumberTitle {
+  font-family: 'Indie Flower', cursive;
+  font-size: 30pt;
+  vertical-align: top;
+}
 
-    .hand-gear {
-        width: 2.3rem;
-        height: 2.3rem;
-        position: absolute;
-        top: 5%;
-        left: 47%;
-        border-radius: 50%;
-        margin: 42% auto;
-        background-color: #c89506;
-    }
+.clock {
+  display: block;
+  width: 40rem;
+  height: 40rem;
+  background-color: black;
+  border: 30px double #17806d;
+  border-radius: 50%;
+  margin: 50px auto;
+  position: relative;
+  padding: 2rem;
+  box-shadow:
+    0 0 5px 6px rgba(0,0,0,0.12),
+    inset 0 0 0 3px #D8D8D885,
+    inset 0 0 13px #cbcbcbd9,
+    0 0 10px rgba(0,0,0,0.2);
+}
 
-    .hand {
-      width: 50%;
-      height: 6px;
-      background: #c89506;
-      border-radius: 5px;
-      position: absolute;
-      top: 50%;
-      transform-origin: 100%;
-      transform: rotate(90deg);
-      transition: all 0.05s;
-      transition-timing-function: cubic-bezier(0.1,0.73,0.44,.05);
-    }
+.clock-face {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform: translateY(-3px); /* account for the height of the clock hands */
+  position: relative;
+}
 
-    .second-hand {
-      height: 3px;
-    }
+.hand-gear {
+    width: 2.3rem;
+    height: 2.3rem;
+    position: absolute;
+    top: 5%;
+    left: 47%;
+    border-radius: 50%;
+    margin: 42% auto;
+    background-color: #c89506;
+}
 
-    .hour-hand {
-      width: 30%;
-      left: 20%
-    }
+.hand {
+  width: 50%;
+  height: 6px;
+  background: #c89506;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  transform-origin: 100%;
+  transform: rotate(90deg);
+  transition: all 0.05s;
+  transition-timing-function: cubic-bezier(0.1,0.73,0.44,.05);
+}
+
+.second-hand {
+  height: 3px;
+}
+
+.hour-hand {
+  width: 30%;
+  left: 20%
+}
 
