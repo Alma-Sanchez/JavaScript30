@@ -1,3 +1,5 @@
+![simple_photo_editor_screenshot.png](https://github.com/Alma-Sanchez/JavaScript30/blob/master/03%20-%20CSS%20Variables/Images/simple_photo_editor.png)
+
 ### Day 3: Playing with CSS Variables and JS
 =========
 __Overview__
