@@ -2,6 +2,7 @@
 
 ### Day 3: Playing with CSS Variables and JS
 =========
+
 __Overview__
   - Blur, add spacing to the image, and change the base color of an image with CSS and JS
 
