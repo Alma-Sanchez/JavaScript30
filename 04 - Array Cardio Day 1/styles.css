@@ -1,0 +1,55 @@
+body {
+  text-align: center;
+  background: #1f1f20;
+  color: white;
+  font-family: 'helvetica neue', sans-serif;
+  font-weight: 100;
+  padding-bottom: 50px;
+}
+
+.content {
+  min-width: 350px;
+  width: 45%;
+  margin: 0 auto;
+  text-align: left;
+  width: 60%;
+  margin: 0 auto;
+}
+
+code {
+  /* display: block;
+  background-color: #e0e0e0;
+  border: 5px solid #0a897d;
+  padding: 20px;
+  padding-left: 0;
+  color: #000;
+  width: 100%;
+  text-align: left;
+  overflow-x: auto;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal; */
+}
+
+h1 {
+  font-size: 50pt;
+  margin-top: 60px;
+  margin-bottom: 120px;
+}
+
+.challengeNumberTitle {
+  font-family: 'Indie Flower', cursive;
+  font-size: 30pt;
+  vertical-align: top;
+}
+
+ol {
+  list-style-position: inside;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  padding-top: 50px;
+}
