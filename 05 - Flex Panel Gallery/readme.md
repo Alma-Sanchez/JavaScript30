@@ -10,6 +10,5 @@ __What I learned__
 - Can use flex to automatically split spacing among items
 
 
-
 ____
 To view the course and give it a try yourself visit: https://JavaScript30.com

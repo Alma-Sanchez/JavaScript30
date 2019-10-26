@@ -1,6 +1,7 @@
 ![Screenshot_2019-10-25 Array Cardio.png](https://github.com/Alma-Sanchez/JavaScript30/blob/master/04%20-%20Array%20Cardio%20Day%201/images/Screenshot_2019-10-25%20Array%20Cardio.png)
-### Day 4: Array Cardio I
-____
+
+Day 4: Array Cardio I
+======
 
 [View Exercises](https://alma-sanchez.github.io/JavaScript30/04%20-%20Array%20Cardio%20Day%201/)
 
