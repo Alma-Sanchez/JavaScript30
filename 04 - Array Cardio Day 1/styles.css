@@ -16,26 +16,30 @@ body {
   margin: 0 auto;
 }
 
-code {
-  /* display: block;
-  background-color: #e0e0e0;
-  border: 5px solid #0a897d;
-  padding: 20px;
-  padding-left: 0;
-  color: #000;
-  width: 100%;
-  text-align: left;
-  overflow-x: auto;
-  white-space: pre;
-  word-spacing: normal;
-  word-break: normal;
-  word-wrap: normal; */
+pre {
+  overflow: auto;
+  tab-size: 2;
+  white-space: pre-wrap;
+}
+
+pre > code {
+  display: block;
+  padding: 0 20px;
+  word-wrap: normal;
 }
 
 h1 {
   font-size: 50pt;
   margin-top: 60px;
   margin-bottom: 120px;
+}
+
+h3 {
+  font-size: 25pt;
+  margin-top: 60px;
+  font-weight: lighter;
+  letter-spacing: 1.6px;
+  margin-bottom: 20px;
 }
 
 .challengeNumberTitle {
@@ -45,11 +49,21 @@ h1 {
 }
 
 ol {
-  list-style-position: inside;
+  list-style-position: outside;
   margin: 0;
+  margin-left: 16px;
   padding: 0;
 }
 
 li {
   padding-top: 50px;
+}
+
+li:first-child {
+  padding-top: 0;
+}
+
+.warning {
+  font-size: 11pt;
+  color: #ba2323;
 }

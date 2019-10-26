@@ -10,7 +10,7 @@
   <h1><span class="challengeNumberTitle">Day 4: </span>Array Cardio 💪</h1>
  
   <div class="content language-javascript">
-    <p>Global Variables</p>
+    <h3>Global Variables</h3>
     <pre><code>
       const inventors = [
         { first: 'Albert', last: 'Einstein', year: 1879, passed: 1955 },
@@ -41,31 +41,45 @@
       ]; 
     </code></pre>
 
+    <br />
+    <h3>Exercises:</h3>
     <ol>
       <li>
         Filter the list of inventors for those who were born in the 1500's using Array.prototype.filter().
         <pre><code>const fifteenCenturyInventors = inventors.filter(inventor => (1500 &lt;= inventor.year && inventor.year &lt;= 1599));      </code></pre>
-        console.table(fifteenCenturyInventors);
+        <br />
+        Output:
+        <br />
+        <p class="warning">* Some outputs have been simplified to just names, for full output see the console.</p>
+        <pre><code class="output1"></code></pre>
       </li>
       <li>
         Give us an array of the inventors' first and last names using Array.prototype.map().
         <pre><code>const inventorNames = inventors.map(inventor => `${inventor.first} ${inventor.last}`);      </code></pre>
-        console.log(inventorNames);
+        <br />
+        Output:
+        <pre><code class="output2"></code></pre>
       </li>
       <li>
         Sort the inventors by birthdate, oldest to youngest by using Array.prototype.sort().
-        <pre><code>const birthdaySort = inventors.sort((inventorA, inventorB) => inventorB.year - inventorA.year);      </code></pre>
-        console.table(birthdaySort);
+        <pre><code>const birthdaySort = inventors.sort((inventorA, inventorB) => inventorB.year - inventorA.year);      </code></pre>        
+        <br />
+        Output:
+        <pre><code class="output3"></code></pre>
       </li>
       <li>
         Count the number of years that all the inventors lived using Array.prototype.reduce().
         <pre><code>const invetorLives = inventors.reduce((counter, inventor) => counter + (inventor.passed - inventor.year), 0);      </code></pre>
-        console.log(invetorLives);
+        <br />
+        Output:
+        <pre><code class="output4"></code></pre>
       </li>
       <li>
         Sort the inventors by years lived by using Array.prototype.sort().
         <pre><code>const yearsLivedSorted = inventors.sort((inventorA, inventorB) => (inventorA.passed  - inventorA.year) - (inventorB.passed  - inventorB.year));      </code></pre>
-        console.table(yearsLivedSorted);
+        <br />
+        Output:
+        <pre><code class="output5"></code></pre>
       </li>
       <li>
         Create a list of Boulevards, from the link, in Paris that contain 'de' anywhere in the name using the sort() method.
@@ -77,18 +91,23 @@
 <!--    --> .map(link => link.innerHTML)
 <!--    --> .filter(streetName => streetname.indexOf("de") >= 0);
         </code></pre>
+        Output soon to come once an ajax call is implemented
+        <!-- <br />
+        Output:
+        <pre><code class="output6"></code></pre> -->
       </li>
       <li>
         Sort the people alphabetically by last name
         <pre><code>
-  <!--   -->const sortedPeeps = people.sort((persA, persB) => {      
+  <!--   -->const sortedInventors = people.sort((persA, persB) => {      
   <!--   -->  const persALastName = persA.split(',')[0];
   <!--   -->  const persBLastName = persB.split(',')[0];
   <!--   -->  persALastName &lt; persBLastName ? -1 : 1;      
   <!--   -->});
         </code></pre>
-        
-        console.log(sortedPeeps);
+        <br />
+        Output:
+        <pre><code class="output7"></code></pre>
       </li>
       <li>
         Sum up the instances using a reducer
@@ -104,8 +123,9 @@
 <!--   -->}
 <!--   -->const transportation = data.reduce(reducer, {});
         </code></pre>
-
-        console.log(transportation);
+        <br />
+        Output:
+        <pre><code class="output8"></code></pre>
       </li>
     </ol>
 
