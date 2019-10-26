@@ -4,124 +4,113 @@
   <meta charset="UTF-8">
   <title>Array Cardio 💪</title>
   <link rel="stylesheet" href="styles.css" />  
-
+  <link rel="stylesheet" href="prism/prism.css" data-noprefix />
 </head>
 <body>
   <h1><span class="challengeNumberTitle">Day 4: </span>Array Cardio 💪</h1>
  
-  <div class="content">
+  <div class="content language-javascript">
     <p>Global Variables</p>
-    <pre><code class="language-javascript">
-    const inventors = [
-      { first: 'Albert', last: 'Einstein', year: 1879, passed: 1955 },
-      { first: 'Isaac', last: 'Newton', year: 1643, passed: 1727 },
-      { first: 'Galileo', last: 'Galilei', year: 1564, passed: 1642 },
-      { first: 'Marie', last: 'Curie', year: 1867, passed: 1934 },
-      { first: 'Johannes', last: 'Kepler', year: 1571, passed: 1630 },
-      { first: 'Nicolaus', last: 'Copernicus', year: 1473, passed: 1543 },
-      { first: 'Max', last: 'Planck', year: 1858, passed: 1947 },
-      { first: 'Katherine', last: 'Blodgett', year: 1898, passed: 1979 },
-      { first: 'Ada', last: 'Lovelace', year: 1815, passed: 1852 },
-      { first: 'Sarah E.', last: 'Goode', year: 1855, passed: 1905 },
-      { first: 'Lise', last: 'Meitner', year: 1878, passed: 1968 },
-      { first: 'Hanna', last: 'Hammarström', year: 1829, passed: 1909 }
-    ];
-  
-    const people = [
-      'Beck, Glenn', 'Becker, Carl', 'Beckett, Samuel', 'Beddoes, Mick', 'Beecher, Henry', 
-      'Beethoven, Ludwig', 'Begin, Menachem', 'Belloc, Hilaire', 'Bellow, Saul', 
-      'Benchley, Robert', 'Benenson, Peter', 'Ben-Gurion, David', 'Benjamin, Walter', 
-      'Benn, Tony', 'Bennington, Chester', 'Benson, Leana', 'Bent, Silas', 
-      'Bentsen, Lloyd', 'Berger, Ric', 'Bergman, Ingmar', 'Berio, Luciano', 'Berle, Milton', 
-      'Berlin, Irving', 'Berne, Eric', 'Bernhard, Sandra', 'Berra, Yogi', 'Berry, Halle', 
-      'Berry, Wendell', 'Bethea, Erin', 'Bevan, Aneurin', 'Bevel, Ken', 'Biden, Joseph', 
-      'Bierce, Ambrose', 'Biko, Steve', 'Billings, Josh', 'Biondo, Frank', 'Birrell, Augustine', 
-      'Black, Elk', 'Blair, Robert', 'Blair, Tony', 'Blake, William'
-    ]; 
+    <pre><code>
+      const inventors = [
+        { first: 'Albert', last: 'Einstein', year: 1879, passed: 1955 },
+        { first: 'Isaac', last: 'Newton', year: 1643, passed: 1727 },
+        { first: 'Galileo', last: 'Galilei', year: 1564, passed: 1642 },
+        { first: 'Marie', last: 'Curie', year: 1867, passed: 1934 },
+        { first: 'Johannes', last: 'Kepler', year: 1571, passed: 1630 },
+        { first: 'Nicolaus', last: 'Copernicus', year: 1473, passed: 1543 },
+        { first: 'Max', last: 'Planck', year: 1858, passed: 1947 },
+        { first: 'Katherine', last: 'Blodgett', year: 1898, passed: 1979 },
+        { first: 'Ada', last: 'Lovelace', year: 1815, passed: 1852 },
+        { first: 'Sarah E.', last: 'Goode', year: 1855, passed: 1905 },
+        { first: 'Lise', last: 'Meitner', year: 1878, passed: 1968 },
+        { first: 'Hanna', last: 'Hammarström', year: 1829, passed: 1909 }
+      ];
+    
+      const people = [
+        'Beck, Glenn', 'Becker, Carl', 'Beckett, Samuel', 'Beddoes, Mick', 
+        'Beecher, Henry', 'Beethoven, Ludwig', 'Begin, Menachem', 'Belloc, Hilaire', 
+        'Bellow, Saul', 'Benchley, Robert', 'Benenson, Peter', 'Ben-Gurion, David', 
+        'Benjamin, Walter', 'Benn, Tony', 'Bennington, Chester', 'Benson, Leana', 
+        'Bent, Silas', 'Bentsen, Lloyd', 'Berger, Ric', 'Bergman, Ingmar', 
+        'Berio, Luciano', 'Berle, Milton', 'Berlin, Irving', 'Berne, Eric', 
+        'Bernhard, Sandra', 'Berra, Yogi', 'Berry, Halle', 'Berry, Wendell', 
+        'Bethea, Erin', 'Bevan, Aneurin', 'Bevel, Ken', 'Biden, Joseph', 'Bierce, Ambrose',       
+        'Biko, Steve', 'Billings, Josh', 'Biondo, Frank', 'Birrell, Augustine', 
+        'Black, Elk', 'Blair, Robert', 'Blair, Tony', 'Blake, William'
+      ]; 
     </code></pre>
 
     <ol>
       <li>
         Filter the list of inventors for those who were born in the 1500's using Array.prototype.filter().
-        <code class="language-javascript">
-          const fifteenCenturyInventors = inventors.filter(inventor => (1500 &lt;= inventor.year && inventor.year &lt;= 1599));
-          <samp>console.table(fifteenCenturyInventors);</samp>
-        </code>
+        <pre><code>const fifteenCenturyInventors = inventors.filter(inventor => (1500 &lt;= inventor.year && inventor.year &lt;= 1599));      </code></pre>
+        console.table(fifteenCenturyInventors);
       </li>
       <li>
         Give us an array of the inventors' first and last names using Array.prototype.map().
-        <pre><code class="language-javascript">
-        const inventorNames = inventors.map(inventor => `${inventor.first} ${inventor.last}`);
+        <pre><code>const inventorNames = inventors.map(inventor => `${inventor.first} ${inventor.last}`);      </code></pre>
         console.log(inventorNames);
-        </code></pre>
       </li>
       <li>
         Sort the inventors by birthdate, oldest to youngest by using Array.prototype.sort().
-        <pre><code class="language-javascript">
-        const birthdaySort = inventors.sort((inventorA, inventorB) => inventorB.year - inventorA.year);
+        <pre><code>const birthdaySort = inventors.sort((inventorA, inventorB) => inventorB.year - inventorA.year);      </code></pre>
         console.table(birthdaySort);
-        </code></pre>
       </li>
       <li>
         Count the number of years that all the inventors lived using Array.prototype.reduce().
-        <pre><code class="language-javascript">
-        const invetorLives = inventors.reduce((counter, inventor) => counter + (inventor.passed - inventor.year), 0);
+        <pre><code>const invetorLives = inventors.reduce((counter, inventor) => counter + (inventor.passed - inventor.year), 0);      </code></pre>
         console.log(invetorLives);
-        </code></pre>
       </li>
       <li>
         Sort the inventors by years lived by using Array.prototype.sort().
-        <pre><code class="language-javascript">
-        const yearsLivedSorted = inventors.sort((inventorA, inventorB) => (inventorA.passed  - inventorA.year) - (inventorB.passed  - inventorB.year));
+        <pre><code>const yearsLivedSorted = inventors.sort((inventorA, inventorB) => (inventorA.passed  - inventorA.year) - (inventorB.passed  - inventorB.year));      </code></pre>
         console.table(yearsLivedSorted);
-        </code></pre>
       </li>
       <li>
         Create a list of Boulevards, from the link, in Paris that contain 'de' anywhere in the name using the sort() method.
         <a>https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris</a>
-        <pre><code class="language-javascript">
-        const links = Array.from(category.querySelectorAll('a')); // NOTE: you can call querySelector on any html object
-        const category = document.querySelector('.mw-category');
-        const de = links
-          .map(link => link.innerHTML)
-          .filter(streetName => streetname.indexOf("de") >= 0);
+        <pre><code>
+<!--    -->const links = Array.from(category.querySelectorAll('a')); // NOTE: you can call querySelector on any html object        
+<!--    -->const category = document.querySelector('.mw-category');
+<!--    -->const de = links
+<!--    --> .map(link => link.innerHTML)
+<!--    --> .filter(streetName => streetname.indexOf("de") >= 0);
         </code></pre>
       </li>
       <li>
         Sort the people alphabetically by last name
-        <pre><code class="language-javascript">
-        const sortedPeeps = people.sort((persA, persB) => {
-        const persALastName = persA.split(',')[0];
-        const persBLastName = persB.split(',')[0];
-          persALastName &lt; persBLastName ? -1 : 1;
-        });
-
-        console.log(sortedPeeps);
+        <pre><code>
+  <!--   -->const sortedPeeps = people.sort((persA, persB) => {      
+  <!--   -->  const persALastName = persA.split(',')[0];
+  <!--   -->  const persBLastName = persB.split(',')[0];
+  <!--   -->  persALastName &lt; persBLastName ? -1 : 1;      
+  <!--   -->});
         </code></pre>
+        
+        console.log(sortedPeeps);
       </li>
       <li>
         Sum up the instances using a reducer
-        <pre><code class="language-javascript">
-          const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck' ];
-          const reducer = (obj, item, idx, array) => {
-            if(!obj.hasOwnProperty([item])) {
-              obj[item] = 0;  
-            } 
-            
-            obj[item] += 1;      
-            
-            return obj;
-          }
-          const transportation = data.reduce(reducer, {});
-          console.log(transportation);
-          </code>
-        </pre>
+        <pre><code>
+<!--   -->const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck' ];         
+<!--   -->const reducer = (obj, item, idx, array) => {
+<!--   -->  if (!obj.hasOwnProperty([item])) {
+<!--   -->    obj[item] = 0;  
+<!--   -->  } 
+<!--   -->  
+<!--   -->  obj[item] += 1;      
+<!--   -->  return obj;
+<!--   -->}
+<!--   -->const transportation = data.reduce(reducer, {});
+        </code></pre>
+
+        console.log(transportation);
       </li>
     </ol>
 
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="themes/prism.css" data-noprefix />
     <script src="prism/prism.js"></script>
-    <script src="index.html"></script>
+    <script src="script.js"></script>
 </body>
 </html>
