@@ -1,4 +1,4 @@
-!(flex-panels-screenshot.png)[https://github.com/Alma-Sanchez/JavaScript30/blob/gh-pages/05%20-%20Flex%20Panel%20Gallery/images/flex-panels-screenshot.png]
+![flex-panels-screenshot.png](https://github.com/Alma-Sanchez/JavaScript30/blob/gh-pages/05%20-%20Flex%20Panel%20Gallery/images/flex-panels-screenshot.png)
 
 Day 5: Flex Panel Gallery
 =========
