@@ -11,3 +11,5 @@ __What I learned__
 
 
 
+____
+To view the course and give it a try yourself visit: https://JavaScript30.com
