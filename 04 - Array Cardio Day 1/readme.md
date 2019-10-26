@@ -2,6 +2,8 @@
 ### Day 4: Array Cardio I
 ____
 
+[View Exercises](https://alma-sanchez.github.io/JavaScript30/04%20-%20Array%20Cardio%20Day%201/)
+
 __What I learned__
 - Solidified my understanding of the reduce method
 - Integrated Prism.js

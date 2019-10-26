@@ -2,6 +2,8 @@
 
 Day 1:  JavaScript Drum Kit
 =========
+[View Drum Machine](https://alma-sanchez.github.io/JavaScript30/01%20-%20JavaScript%20Drum%20Kit/)
+
 __Overview__
   - Review of the HTML audio tag
   - Data attributes - used to store specific data that has no visual representation

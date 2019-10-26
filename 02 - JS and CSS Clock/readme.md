@@ -3,6 +3,8 @@
 Day 2: CSS & JS Clock
 =========
 
+[View Working Clock](https://alma-sanchez.github.io/JavaScript30/02%20-%20JS%20and%20CSS%20Clock/)
+
 __Overview__
   - setInterval refresher   
   - Ran into bug where the minute hand would go all the way around the clock when it reset

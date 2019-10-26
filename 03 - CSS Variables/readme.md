@@ -2,6 +2,8 @@
 
 ### Day 3: Playing with CSS Variables and JS
 _____
+[View Image Editor](https://alma-sanchez.github.io/JavaScript30/03%20-%20CSS%20Variables/)
+
 
 __Overview__
   - Blur, add spacing to the image, and change the base color of an image with CSS and JS
