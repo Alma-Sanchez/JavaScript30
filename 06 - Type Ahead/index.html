@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Type Ahead 👀</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1><span class="challengeNumberTitle">Day 6: </span>Type Ahead</h1>
+  <form class="search-form">
+    <input type="text" class="search" placeholder="City or State">
+    <ul class="suggestions">
+      <li>Filter for a city</li>
+      <li>or a state</li>
+    </ul>
+  </form>
+
+  <script>
+    const endpoint = 'https://gist.githubusercontent.com/Miserlou/c5cd8364bf9b2420bb29/raw/2bf258763cdddd704f8ffd3ea9a3e81d25e2c6f6/cities.json';
+
+    const cities = [];
+    const query = document.querySelector('.search');
+    const suggestions = document.querySelector('.suggestions');
+    // Add event listeners
+    query.addEventListener('change', displayMatches);
+    query.addEventListener('keyup', displayMatches);
+
+    const getCities = fetch(endpoint)
+      .then(response => response.json()
+      .then(data => cities.push(...data)))
+    ;
+
+    function findMatches(word, cities) {
+      const wordRegex = new RegExp(word, 'gi');
+      return cities.filter(cityInfo => cityInfo.city.match(wordRegex) || cityInfo.state.match(wordRegex))
+    };
+
+    // Format the numbers to look nice. This was taken from stackoverlfow
+    function numberWithCommas(x) {
+        return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    };
+
+    function displayMatches() {
+      const matchesArray = findMatches(this.value, cities);
+    
+      const html = matchesArray.map(cityInfo => {
+        const highlightRegEx = new RegExp(this.value, 'gi');
+
+        const cityName = cityInfo.city.replace(highlightRegEx, `<span class="hl">${this.value}</span>`)
+        const stateName = cityInfo.state.replace(highlightRegEx, `<span class="hl">${this.value}</span>`)
+        return `<li>
+          <span class="name">${cityName}, ${stateName}</span>
+          <span class="population">${numberWithCommas(cityInfo.population)}</span>
+        </li>`
+      }).join('');
+      
+      suggestions.innerHTML = html;
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+</body>
+</html>
