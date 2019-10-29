@@ -12,3 +12,6 @@ __What I learned__
 
 __Features Wanted__
 - Created a website to showcase the 8 exercises from the challenge
+
+____
+To view the course and give it a try yourself visit: https://JavaScript30.com
