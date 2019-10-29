@@ -2,6 +2,7 @@
 
 Day 6: Type Ahead
 =====
+[View live site](https://alma-sanchez.github.io/JavaScript30/06%20-%20Type%20Ahead/)
 
 __What I learned__
 - Regex refresher
