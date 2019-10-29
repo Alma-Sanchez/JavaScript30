@@ -1,0 +1,47 @@
+body {
+  background-color: #110804;
+  color: white;
+}
+ 
+h1 {
+  margin-top: 60px;
+  margin-bottom: 70px;
+  font-size: 58pt;
+  text-align: center;
+}
+
+h3 {
+  font-size: 25pt;
+  margin-top: 60px;
+  font-weight: lighter;
+  letter-spacing: 1.6px;
+  margin-bottom: 20px;
+}
+
+.challengeNumberTitle {
+  font-family: 'Indie Flower', cursive;
+  font-size: 30pt;
+  vertical-align: top;
+}
+
+.content {
+  width: 60%;
+  margin: 0 auto;
+}
+
+ol {
+  list-style-position: outside;
+  padding: 0;
+  margin: 0;
+  margin-left: 16px;
+}
+
+samp {
+  padding: 0 5px;
+  background-color: #a24906cf;
+  border-radius: 5px;
+}
+
+li {
+  padding-bottom: 30px;
+}

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Array Cardio 💪💪</title>
+  <link rel="stylesheet" href="../prism/prism.css" data-noprefix />
+  <link rel="stylesheet" href="styles.css" />
+
+</head>
+<body>
+  <h1><span class="challengeNumberTitle">Day 7: </span>Array Cardio II 💪💪 </h1>
+
+  <div class="content">
+    <h3>Global Variables</h3>
+
+    <pre class="brown"><code class="language-javascript">
+      const people = [
+        { name: 'Wes', year: 1988 },
+        { name: 'Kait', year: 1986 },
+        { name: 'Irv', year: 1970 },
+        { name: 'Lux', year: 2015 }
+      ];
+
+      const comments = [
+        { text: 'Love this!', id: 523423 },
+        { text: 'Super good', id: 823423 },
+        { text: 'You are the best', id: 2039842 },
+        { text: 'Ramen is my fav food ever', id: 123523 },
+        { text: 'Nice Nice Nice!', id: 542328 }
+      ];
+    </code></pre>
+
+    <h3>Exercises: </h3>
+    <ol class="language-javascript">
+      <li>
+        Figure out if <strong>at least one person</strong> is 19 or older using <samp>Array.prototype.some()</samp>?
+
+        <pre><code>const someAdults = people.some((person) => ((new Date()).getFullYear() - person.year) >= 19);  </code></pre>
+        Output:
+        <pre><code>true</code></pre>
+      </li>
+
+      <li> 
+        Find out if <strong>everyone</strong> is 19 or older using <samp>Array.prototype.every()</samp>?
+        <pre><code>const allAdults = people.every((person) => (((new Date()).getFullYear() - person.year) >= 19));  </code></pre>
+        Output: (false at the time this was written 2019)
+        <pre><code>false</code></pre>
+      </li>
+
+      <li>
+        The find function, <samp>Array.prototype.find()</samp>, is like filter, 
+        but instead returns just the one you are looking for. Find the comment with the ID of <em>823423</em> using this method.
+        <pre><code>const comment = comments.find((comment) => comment.id === 823423);</code></pre>
+        Output
+        <pre><code class="output3"></code></pre>
+      </li>
+
+      <li>
+        Find the comment with this ID then delete the comment with the ID of <em>823423</em> using <samp>Array.prototype.findIndex()</samp>.
+        <pre><code>
+<!--   -->const deleteComment = (ID) => {
+<!--   -->  const index = comments.findIndex(com => (com.id === ID));
+<!--   -->  if(index &lt; 0) { // If not found, return
+<!--   -->    console.log(`ERROR: ${ID} could not be found.`)
+<!--   -->    return;
+<!--   -->  }
+              
+<!--   -->  console.log(`Deleteing ${comments[index].id}........`);
+<!--   -->  // METHOD: 1
+<!--   -->  // comments.splice(index, 1) // Edits original array
+
+<!--   -->  // METHOD: 2
+<!--   -->  // Create new array and use slice
+<!--   -->  const newComments = [
+<!--   -->    ...comments.slice(0, index),
+<!--   -->    ...comments.slice(index + 1)
+<!--   -->  ];
+<!--   -->  console.log('SUCCESS');
+      
+<!--   -->  return newComments;
+<!--   -->}
+        </code></pre>
+        Normal Output:
+        <pre><code class="output4a">
+<!--   -->// deleteComment(823423);</code></pre>
+        
+        Output with error:
+        <pre><code class="output4b">
+<!--   -->// deleteComment(823203);</code></pre>
+      </li>
+    </ol>
+  </div>
+
+  <script>
+    // ## Array Cardio Day 2
+    const people = [
+      { name: 'Wes', year: 1988 },
+      { name: 'Kait', year: 1986 },
+      { name: 'Irv', year: 1970 },
+      { name: 'Lux', year: 2015 }
+    ];
+
+    const comments = [
+      { text: 'Love this!', id: 523423 },
+      { text: 'Super good', id: 823423 },
+      { text: 'You are the best', id: 2039842 },
+      { text: 'Ramen is my fav food ever', id: 123523 },
+      { text: 'Nice Nice Nice!', id: 542328 }
+    ];
+
+    // Some and Every Checks
+    // 1. Array.prototype.some() // is at least one person 19 or older?
+    const someAdults = people.some((person) => ((new Date()).getFullYear() - person.year) >= 19);
+    console.log(someAdults);
+
+    // 2. Array.prototype.every() // is everyone 19 or older?
+    const allAdults = people.every((person) => (((new Date()).getFullYear() - person.year) >= 19));
+    console.log(allAdults);
+
+    // 3. Array.prototype.find()
+    // Find is like filter, but instead returns just the one you are looking for
+    // find the comment with the ID of 823423
+    const comment = comments.find((com) => com.id === 823423);
+    document.querySelector(".output3").append(JSON.stringify(comment, null, 2));
+    console.log(comment);
+
+    // 4. Array.prototype.findIndex()
+    // Find the comment with this ID
+    // delete the comment with the ID of 823423
+    const deleteComment = (ID) => {
+      // For display purposes
+      const successfulDeletion = document.querySelector(".output4a");
+      const errorEx = document.querySelector(".output4b");
+
+      const index = comments.findIndex(com => (com.id === ID));
+      if(index < 0) { // If not found, return
+        let message = `\nERROR: ${ID} could not be found.`;
+        console.log(message);
+        errorEx.append(message);
+
+        return;
+      }
+
+      let message = `\nDeleting ${comments[index].id}........`;
+      console.log(message);
+      successfulDeletion.append(message + "\n");
+
+      // METHOD: 1
+      // comments.splice(index, 1) // Edits original array
+      // METHOD: 2
+      // Create new array and use slice
+      const newComments = [
+        ...comments.slice(0, index),
+        ...comments.slice(index + 1)
+      ];
+      console.log('SUCCESS');
+      successfulDeletion.append('SUCCESS \n');
+      successfulDeletion.append(JSON.stringify(comments, null, 2));
+
+      return newComments;
+    }
+
+    console.table(deleteComment(823423));
+    console.table(deleteComment(823203));
+  </script>
+  <script src="../prism/prism.js"></script>
+</body>
+</html>
