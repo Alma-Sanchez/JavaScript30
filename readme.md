@@ -1,39 +1,47 @@
 ![](https://javascript30.com/images/JS3-social-share.png)
 
 # JavaScript30
+_Note: project is still in progress_
 
 Completed solutions for the JavaScript 30 Day Challenge along with my own modifications.
 
+I have created a webpage for each challenge [the links can be found below](#Project-Links). Some challenges came with an intuitive or already built design, but some proved to be more challening. 
+
+For the future, I'd like to create a webpage where you can click through all of the exercises without having to return to github.
+
+___
 To view the course and grab the starter files visit [https://JavaScript30.com](https://JavaScript30.com)
 
+<br/>
 
+## Project Links
 Day 1
 ======
-#### Drum Machine
+[Drum Machine](https://alma-sanchez.github.io/JavaScript30/01%20-%20JavaScript%20Drum%20Kit/)
 
 Day 2
 ======
-#### CSS & JS Clock
+[CSS & JS Clock](https://alma-sanchez.github.io/JavaScript30/02%20-%20JS%20and%20CSS%20Clock/)
 
 Day 3
 ======
-#### Playing with CSS Variables and JS
+[Playing with CSS Variables and JS](https://alma-sanchez.github.io/JavaScript30/03%20-%20CSS%20Variables/)
 
 Day 4
 ======
-#### Array Cardio Day 1
+[Array Cardio Day 1](https://alma-sanchez.github.io/JavaScript30/04%20-%20Array%20Cardio%20Day%201/)
 
 Day 5
 ======
-#### Flex Panels Image Gallery
+[Flex Panels Image Gallery](https://alma-sanchez.github.io/JavaScript30/05%20-%20Flex%20Panel%20Gallery/)
 
 Day 6
 ======
-#### Ajax Type Ahead
+[Ajax Type Ahead](https://alma-sanchez.github.io/JavaScript30/06%20-%20Type%20Ahead/)
 
 Day 7
 ======
-#### Array Cardio Day 2
+[Array Cardio Day 2](https://alma-sanchez.github.io/JavaScript30/07%20-%20Array%20Cardio%20Day%202/)
 
 Day 8
 ======
