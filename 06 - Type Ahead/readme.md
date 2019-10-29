@@ -5,6 +5,6 @@ Day 6: Type Ahead
 
 __What I learned__
 - Regex refresher
-
+- How to fetch from data from a website using `fetch()`
 ___
 To view the course and give it a try yourself visit: https://JavaScript30.com
