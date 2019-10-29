@@ -1,8 +1,8 @@
-![]()
+![Array_Cardio_II.png](https://github.com/Alma-Sanchez/JavaScript30/blob/gh-pages/07%20-%20Array%20Cardio%20Day%202/images/Array_Cardio_II.png)
 Day 7: Array Cardio II
 ======
 
-[View Exercises](https://alma-sanchez.github.io/JavaScript30/04%20-%20Array%20Cardio%20Day%201/)
+[View Exercises](https://alma-sanchez.github.io/JavaScript30/07%20-%20Array%20Cardio%20Day%202/)
 
 __What I learned__
 - `space` argument in `JSON.stringify` https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify
