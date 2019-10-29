@@ -1,4 +1,4 @@
-![clock_screenshot.jpg](https://github.com/Alma-Sanchez/JavaScript30/blob/master/02%20-%20JS%20and%20CSS%20Clock/images/clock_image.jpg)
+![clock_image.jpg](https://github.com/Alma-Sanchez/JavaScript30/blob/master/02%20-%20JS%20and%20CSS%20Clock/images/clock_image.jpg)
 
 Day 2: CSS & JS Clock
 =========
